@@ -13,6 +13,10 @@ public class UserViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     public TextView txt_user_email;
     public IRecyclerItemClickListener iRecyclerItemClickListener;
 
+    public void setiRecyclerItemClickListener(IRecyclerItemClickListener iRecyclerItemClickListener) {
+        this.iRecyclerItemClickListener = iRecyclerItemClickListener;
+    }
+
     public UserViewHolder(@NonNull View itemView) {
         super(itemView);
         txt_user_email = (TextView) itemView.findViewById(R.id.txt_user_email);
